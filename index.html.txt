@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rustlandia Server</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to Rustlandia Server</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Servers</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>Latest News</h2>
+		<p>Here you can find the latest news and updates about Rustlandia Server.</p>
+
+		<h2>Our Servers</h2>
+		<p>We offer a variety of Rust servers for players of all levels.</p>
+
+		<h2>Join Our Community</h2>
+		<p>Connect with other players and stay up-to-date on Rustlandia Server news and events.</p>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Rustlandia Server</p>
+	</footer>
+</body>
+</html>
