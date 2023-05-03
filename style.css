@@ -66,7 +66,7 @@ nav a:hover {
 
 /* Main content */
 main {
-    background-image: url('Pictures\LandingPage.webp');
+    background-image: url('images/LandingPage.webp');
     background-size: cover;
     background-position: center center;
     color: #333;
