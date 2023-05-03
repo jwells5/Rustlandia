@@ -6,7 +6,8 @@
 </head>
 <body>
 	<header>
-		<h1>Welcome to Rustlandia Server</h1>
+		<h1>Rustlandia Server</h1>
+		<h2>Survive and thrive in Rust</h2>
 	</header>
 	
 	<nav>
@@ -19,18 +20,41 @@
 	</nav>
 
 	<main>
-		<h2>Latest News</h2>
-		<p>Here you can find the latest news and updates about Rustlandia Server.</p>
-
-		<h2>Our Servers</h2>
-		<p>We offer a variety of Rust servers for players of all levels.</p>
-
-		<h2>Join Our Community</h2>
-		<p>Connect with other players and stay up-to-date on Rustlandia Server news and events.</p>
+		<section class="scroll-reveal">
+			<h2>Latest News</h2>
+			<p>Here you can find the latest news and updates about Rustlandia Server.</p>
+		</section>
+	
+		<section class="scroll-reveal">
+			<h2>Our Servers</h2>
+			<p>We offer a variety of Rust servers for players of all levels.</p>
+		</section>
 	</main>
+	
 
 	<footer>
 		<p>&copy; 2023 Rustlandia Server</p>
 	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const revealElements = document.querySelectorAll('.scroll-reveal');
+			
+			function checkVisibility() {
+				const windowHeight = window.innerHeight;
+				
+				revealElements.forEach(element => {
+					const elementTop = element.getBoundingClientRect().top;
+					
+					if (elementTop <= windowHeight - 100) {
+						element.classList.add('visible');
+					}
+				});
+			}
+			
+			checkVisibility();
+			window.addEventListener('scroll', checkVisibility);
+		});
+	</script>	
 </body>
 </html>
